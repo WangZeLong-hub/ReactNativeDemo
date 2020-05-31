@@ -1,4 +1,4 @@
-package com.dz365.ble;
+package com.demo;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothGatt;
@@ -14,13 +14,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class BTServiceActivity extends Activity {
+
     ListView lvBTService;
     private List listServiceUUID,listUUIDDetail;
 
@@ -30,15 +30,6 @@ public class BTServiceActivity extends Activity {
 
     private MyShowAdapter myAdapter2;
     private Handler msgHandler;
-
-
-
-
-
-
-
-
-
     private final BluetoothGattCallback mGattCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
@@ -169,7 +160,6 @@ public class BTServiceActivity extends Activity {
         public void onCharacteristicWrite (BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status){
         }
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

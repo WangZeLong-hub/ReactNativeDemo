@@ -5,21 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF5EE"
     tools:context=".controlActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="与智能水杯盖交互 "
+            android:layout_gravity="center"
+            android:text="个性化配置 "
+            android:textSize="30dp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,30 +28,37 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="喝水时间间隔设置"
+            android:layout_gravity="center"
+            android:text="喝水时间间隔："
+            android:textColor="#03A9F4"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/TimeSet20min"
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#008000"
         android:text="20分钟" />
 
     <Button
         android:id="@+id/TimeSet40min"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="100dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="30分钟" />
+        android:textColor="#FFA500"
+        android:text="40分钟" />
 
     <Button
         android:id="@+id/TimeSet60min"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="100dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:textColor="#00BFFF"
         android:text="60分钟" />
 
     <LinearLayout
@@ -86,21 +91,37 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#03A9F4"
             android:text="水温信息：(每8秒更新)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="241dp">
+        android:layout_width="421dp"
+        android:layout_height="104dp">
 
         <TextView
             android:id="@+id/tvInfo"
             android:layout_width="match_parent"
-            android:layout_height="152dp"
+            android:layout_height="140dp"
+            android:background="#C0C0C0"
             android:text="等待接收....无数据...."
             android:textSize="19dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnback"
+            android:textColor="#000000"
+            android:text="回到首页"
+            />
 
     </LinearLayout>
 

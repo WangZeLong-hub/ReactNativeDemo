@@ -1,4 +1,4 @@
-package com.dz365.ble;
+package com.demo;
 
 import android.content.Context;
 import android.view.LayoutInflater;

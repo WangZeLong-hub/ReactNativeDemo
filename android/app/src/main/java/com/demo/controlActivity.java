@@ -1,6 +1,5 @@
-package com.dz365.ble;
+package com.demo;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattDescriptor;
@@ -9,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,7 +22,7 @@ import java.util.UUID;
 public class controlActivity extends AppCompatActivity {
     Button btnJDQOn,btnJDQOff,TimeSet20min,TimeSet40min,TimeSet60min;
     Button btnLEDOn,btnLEDOff;
-
+    Button btnback;
     private static final int STATE_DISCONNECTED = 0;
     private static final int STATE_CONNECTING = 1;
     private static final int STATE_CONNECTED = 2;
@@ -88,7 +88,13 @@ public class controlActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control);
-
+        btnback = (Button)findViewById(R.id.btnback );
+        btnback .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(controlActivity.this,MainActivity.class));
+            }
+        });
 
 
 

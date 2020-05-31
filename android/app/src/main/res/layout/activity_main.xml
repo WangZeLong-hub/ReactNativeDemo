@@ -5,36 +5,23 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#F0FFFF"
     tools:context=".MainActivity" >
+
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="点击跳转到RN界面"/>
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:textSize="16dp"
-        android:text="蓝牙搜索需要定位权限，" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:textSize="20dp"
-        android:text="点击刷新，搜索选择要连接的蓝牙" />
+        android:text="如何使用智能水杯盖提醒？" />
 
     <Button
         android:id="@+id/buttonRefresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:text="搜索刷新" />
 
     <!--    <android.support.v4.view.ViewPager-->
@@ -44,8 +31,15 @@
     <!--    android:layout_height="0dp"-->
     <!--    android:layout_weight="1" >-->
     <!--    </android.support.v4.view.ViewPager>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙列表:"
+        android:textColor="#4169E1"
+        android:textSize="20dp"/>
     <ListView
         android:id="@+id/btInfo"
         android:layout_width="match_parent"
-        android:layout_height="524dp" />
+        android:layout_height="372dp"
+        android:background="#B0E0E6"/>
 </LinearLayout>

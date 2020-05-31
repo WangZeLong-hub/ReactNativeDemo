@@ -1,4 +1,4 @@
-package com.dz365.ble;
+package com.demo;
 
 import android.app.Application;
 import android.bluetooth.BluetoothAdapter;
